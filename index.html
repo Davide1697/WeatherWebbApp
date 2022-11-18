@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="icon" type="image/x-icon"  href="/icona/Cloud-Sun-16.ico">
+        <title>See The Weather in Your Town</title>
+    </head>
+    <body>
+        <h1>What's the Weather in your City ?</h1>
+        <div class="start" id="inizio"> 
+            <div class="search-container">
+                <form class="barra-ricerca">
+                    <input type="text" id="location" required placeholder="Search..."></input>
+                    <button id="cerca" type="submit" class="icon"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div id="errore"></div>
+            <div class="weather-info loading"  id="info">
+                <!--<h3 class="error" id="errore"></h3>-->
+                <h2 class="city" id="località"></h2>
+                <div class="temperature" id="temperatura"></div>
+                <div class="description" id="cielo"></div>
+                <div class="humidity" id="umidità"></div>
+                <div class="wind-speed" id="velocità-vento"></div>
+                
+            </div>
+        </div>
+    
+        <script src="prova.js"></script>
+    </body>
+</html>
